@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* css for body  */
+body{
+  background: linear-gradient(to right ,#facfac ,#faefae );
+  display: flex;
+  flex-direction: column; 
+  padding: 20px;
+
+}
+h1{
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  text-align: center;
+  font-size: 50px; 
+  background-color: black;
+  padding: 25px;
+}
+/* form css  */
+.form {
+  width: 300px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+}
+form {
+  margin-top: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* input field css  */
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.todo-input{
+  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+.todo-input>p{
+  font-size: 25px;
+   background-color: white;
+   padding: 25px;
+   border-radius: 10px;
+   margin-top: 20px;
+   margin: 25px;
+}
+button{
+  width: 100%;
+  height: 35px;
+  background-color: rgb(18, 68, 235);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px .3px black;
+  cursor: pointer;
+  margin-bottom: 20px;
+  color: white;
+}
+
+button:hover {
+  background-color: #111211;
+  color: white;
+}
+
+.fa-plus {
+  margin-right: 5px;
+} 
+/* display div css */
+#display{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px; 
+}
+.student-info{
+  background-color: white;
+  border: 1px solid #ccc; 
+  padding: 10px; 
+  box-sizing: border-box; 
+}
+.delete{
+  width: 30%; 
+  margin-top: 25px;
+  margin-left: 25px;
+}
+.edit{
+  width: 30%;
+  float: left;
+  margin-top: 25px; 
+  margin-left: 75px;
+}
+.para{ 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  background-color: rgb(34, 34, 36);
+  color: white; 
+  box-shadow: 5px 5px 10px 10px rgb(211, 206, 206);
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 15px;
+} 
+/* media query css for different screen size  */
+@media screen and (max-width: 782px) {
+  .todo-input{
+    flex-direction: column;
+  }
+  .right{
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 25px;
+  }
+  #display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .student-info{
+    width: 100%;
+  }
+  .edit{
+    margin-left: 50px;
+  }
+}

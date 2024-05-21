@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>TodoList</title>
+  </head>
+  <body>
+    <!-- header section  -->
+    <header>
+      <div class="todo-input">
+          <h1>Student Registration</h1> 
+          <p>The Student Registration System is a comprehensive platform designed to streamline the process of registering students for courses within an educational institution. It offers an intuitive interface for both students and administrators, allowing students to easily browse available courses, register for classes, and manage their schedules. Administrators can efficiently oversee the registration process, monitor enrollment numbers, and make necessary adjustments to course offerings. With its user-friendly features and robust functionality, the Student Registration System enhances efficiency and convenience for all stakeholders involved.</p>
+
+          <!-- heading of the page  -->
+      </div>
+    </header>
+    <!-- main portion -->
+    <main>
+      <!-- form part of the page  -->
+      <div class="form">
+        <form id="registration-form">
+          <!-- Name input and label field  -->
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter Your Name.....">
+        <!-- student id input and label field  -->
+        <label for="studentid">Student ID</label>
+        <input type="text" id="studentid" placeholder="Enter Your Student ID.....">
+        <!-- email id input and label field  -->
+        <label for="emailid">Email ID</label>
+        <input type="email" id="emailid" placeholder="Enter Your Email ID...">
+        <!-- contact no input and email id field  -->
+        <label for="contactno">Contact No</label>
+        <input name="todo" type="number" id="contactno">
+        <!-- button to add data  -->
+        <button id="addbtn"><i class="fa-regular fa-plus"></i></button>
+      </form>
+    </div>
+  </main>
+  <!-- display portion of the page where all the registration data will be shown  -->
+      <div id="display">
+       
+      </div>
+      <!-- script portion of the page  -->
+    <script src="index.js"></script>
+  </body>
+</html>
